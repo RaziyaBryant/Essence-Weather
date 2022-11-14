@@ -140,7 +140,7 @@ function showBoston(event) {
 
 function showLosAngeles(event) {
   event.preventDefault();
-  let losAngeles = document.querySelector("#losangeles-button").value;
+  let LosAngeles = document.querySelector("#losangeles-button").value;
   searchCity("Los Angeles");
 }
 
