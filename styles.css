@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: "Raleway", sans-serif;
 }
 
 header {
@@ -14,6 +15,7 @@ header {
     padding: 15px 0;
     color: #ffba00;
     font-weight: 800;
+    font-family: "Raleway", sans-serif;
 }
 
 .weather-app {
