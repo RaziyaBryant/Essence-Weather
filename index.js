@@ -134,25 +134,25 @@ function currentLocation(event) {
 
 function showBoston(event) {
   event.preventDefault();
-  let nyc = document.querySelector("#boston-button").value;
+  let Boston = document.querySelector("#boston-button").value;
   searchCity("Boston");
 }
 
 function showLosAngeles(event) {
   event.preventDefault();
-  let paris = document.querySelector("#losangeles-button").value;
+  let losAngeles = document.querySelector("#losangeles-button").value;
   searchCity("Los Angeles");
 }
 
 function showSanFransico(event) {
   event.preventDefault();
-  let tokyo = document.querySelector("#sanfrancisco-button").value;
+  let SanFrancisco = document.querySelector("#sanfrancisco-button").value;
   searchCity("San Francisco");
 }
 
 function showSeattle(event) {
   event.preventDefault();
-  let losAngeles = document.querySelector("#seattle-button").value;
+  let Seattle = document.querySelector("#seattle-button").value;
   searchCity("Seattle");
 }
 
