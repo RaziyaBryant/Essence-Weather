@@ -167,16 +167,16 @@ let currentCityButton = document.querySelector("#current-button");
 currentCityButton.addEventListener("click", currentLocation);
 
 let bostonButton = document.querySelector("#boston-button");
-nycButton.addEventListener("click", showNYC);
+bostonButton.addEventListener("click", showBoston);
 
 let losangelesButton = document.querySelector("#losangeles-button");
-parisButton.addEventListener("click", showParis);
+losangelesButton.addEventListener("click", showLosangeles);
 
 let sanfrancsicoButton = document.querySelector("#sanfrancisco-button");
-tokyoButton.addEventListener("click", showTokyo);
+sanfrancsicoButton.addEventListener("click", showSanFransico);
 
 let seattleButton = document.querySelector("#seattle-button");
-laButton.addEventListener("click", showLosAngeles);
+seattleButton.addEventListener("click", showSeattle);
 
 function changeCelsius(event) {
   event.preventDefault();
