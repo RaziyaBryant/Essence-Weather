@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/f8025abd6a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <header>Essence Weather</header>
+            <div class="cities">
+                <div class="row">
+                    <div class="col-12 cities-button">
+                        <button type="button" class="btn btn-dark shadow-sm" id="boston-button">
+                            Boston
+                        </button>
+                        <button type="button" class="btn btn-dark shadow-sm" id="losangeles-button">
+                            Los Angeles
+                        </button>
+                        <button type="button" class="btn btn-dark shadow-sm" id="scottsdale-button">
+                            Scottsdale
+                        </button>
+                        <button type="button" class="btn btn-dark shadow-sm" id="seattle-button">
+                            Seattle
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <br />
+            <form class="search-form" id="search-form">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="search" placeholder="City Search" autofocus="on" class="form-control shadow-sm"
+                            id="city-input" autocomplete="off" />
+                    </div>
+                    <div class="col-3 search-btn">
+                        <input type="submit" value="Search" class="form-control btn btn-light shadow-sm" />
+                    </div>
+                    <div class="col-3 search-btn">
+                        <input type="submit" value="Current City" class="form-control btn btn-dark shadow-sm"
+                            id="current-button" />
+                    </div>
+                </div>
+            </form>
+            <br />
+            <div class="overview">
+                <h1 id="city"></h1>
+                <br>
+                <ul>
+                    <li>Last updated: <span id="date"></span></li>
+                    <li id="weather-description"></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex weather-temperature">
+                        <img class="icon" src="" alt="Clear" id="icon" />
+                        <strong id="temp"></strong>
+                        <span class="units"> <a href="#" id="fahrenheit-link"
+                        class="active">°F</a> | <a href="#" id="celsius-link" class="active"> °C</a></span>
+                    </div>
+                </div>
+                <div class="col-6 additional-info">
+                    <ul>
+                        <li>Humidity: <span id="humidity"></span> %</li>
+                        <li>Wind: <span id="wind-speed"></span> km/h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="weather-forecast" id="forecast"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <small>
+            <a href="https://github.com/RaziyaBryant/Essence-Weather" target="_blank">Open-source code
+                <span>by Raziya Bryant</span></a>
+            and
+            <a href="https://friendly-empanada-192bb9.netlify.app/" target="_blank">hosted on Netlify</a>
+        </small>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
